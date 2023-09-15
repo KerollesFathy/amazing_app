@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include amazing_app *.css
+recursive-include amazing_app *.csv
+recursive-include amazing_app *.html
+recursive-include amazing_app *.ico
+recursive-include amazing_app *.js
+recursive-include amazing_app *.json
+recursive-include amazing_app *.md
+recursive-include amazing_app *.png
+recursive-include amazing_app *.py
+recursive-include amazing_app *.svg
+recursive-include amazing_app *.txt
+recursive-exclude amazing_app *.pyc
