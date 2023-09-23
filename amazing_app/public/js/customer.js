@@ -80,7 +80,6 @@ frappe.ui.form.on("Customer", {
 					dialog.hide();
 				}
 			});
-
 			dialog.show();
 
 		})
