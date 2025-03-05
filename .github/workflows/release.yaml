@@ -28,7 +28,6 @@ jobs:
                                       @semantic-release/git \
                                       @semantic-release/exec \
                                       @semantic-release/github \
-                                      @semantic-release/release-notes-generator \   
       - name: Create Release
         env:
           GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
