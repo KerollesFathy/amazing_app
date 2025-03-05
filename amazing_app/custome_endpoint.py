@@ -7,9 +7,6 @@ def get_vip_customers(fields):
 	fields=fields,
 	as_list=False)
 
-@frappe.whitelist()
-def ping():
-	return "pong"
 
 @frappe.whitelist()
 def recive_data_from_outside(data=None):
@@ -23,6 +20,3 @@ def recive_data_from_outside(data=None):
 	vip_customer.insert()
 	print(f"\n\n{data}\n\n")
 
-# test ping
-def test_ping():
-	assert ping() == "pong"
