@@ -23,3 +23,6 @@ def recive_data_from_outside(data=None):
 @frappe.whitelist(allows_guest=True)
 def greet():
 	return "Hello World"
+
+def get_data():
+	return "Hello World"
