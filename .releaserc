@@ -39,9 +39,8 @@
 			}
 		],
 		[
-			"@semantic-release/exec",
-			{
-				"prepareCmd": 'sed -ir -E "s/\"[0-9]+\.[0-9]+\.[0-9]+\"/\"${nextRelease.version}\"/" amazing_app/__init__.py'
+			"@semantic-release/exec", {
+				"prepareCmd": "echo 'Preparing new version: ${nextRelease.version}' && sed -ir -E \"s/__version__ = \\\"[0-9]+\\.[0-9]+\\.[0-9]+\\\"/__version__ = \\\"${nextRelease.version}\\\"/\" amazing_app/__init__.py"
 			}
 		],
 		[
