@@ -24,10 +24,8 @@ jobs:
 
       - name: Setup dependencies
         run: |
-          npm install --save-dev @semantic-release/changelog \
-                                      @semantic-release/git \
-                                      @semantic-release/exec \
-                                      @semantic-release/github \
+          npm install @semantic-release/git @semantic-release/exec --no-save
+
       - name: Create Release
         env:
           GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
