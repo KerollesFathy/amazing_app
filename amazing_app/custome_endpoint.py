@@ -20,3 +20,6 @@ def recive_data_from_outside(data=None):
 	vip_customer.insert()
 	print(f"\n\n{data}\n\n")
 
+@frappe.whitelist(allows_guest=True)
+def greet():
+	return "Hello World"
