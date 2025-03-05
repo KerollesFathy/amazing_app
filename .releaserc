@@ -23,7 +23,7 @@
 				"preset": "angular",
 				"presetConfig": {
 					"types": [
-						{ "type": "feat", "section": "✨ Features", "hidden": false },
+						{ "type": "feat", "section": "&#x2728; Features", "hidden": false },
 						{ "type": "fix", "section": "🐛 Bug Fixes", "hidden": false },
 						{ "type": "perf", "section": "⚡ Performance", "hidden": false },
 						{ "type": "refactor", "section": "🔨 Code Refactoring", "hidden": false },

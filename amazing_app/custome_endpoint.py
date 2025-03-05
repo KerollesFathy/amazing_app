@@ -26,3 +26,5 @@ def greet():
 
 def get_data():
 	return "Hello World"
+
+# TODO Feature: Add a new endpoint to get the list of VIP customers
