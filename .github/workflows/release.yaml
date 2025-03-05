@@ -6,6 +6,10 @@ jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Grants permission to push version updates
+      issues: write    # Needed if Semantic Release posts release notes to issues
+      pull-requests: write  # Needed if Semantic Release interacts with PRs
     steps:
       - name: Checkout Entire Repository
         uses: actions/checkout@v3
@@ -23,7 +27,8 @@ jobs:
           npm install --save-dev @semantic-release/changelog \
                                       @semantic-release/git \
                                       @semantic-release/exec \
-                                      @semantic-release/github      
+                                      @semantic-release/github \
+                                      @semantic-release/release-notes-generator \   
       - name: Create Release
         env:
           GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
